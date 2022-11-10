@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleText.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/TextSample.unity
+    guid: 3a3495a0ecd2f7c4197a568089fef6d2
   m_configObjects: {}

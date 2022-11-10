@@ -6,11 +6,12 @@ using UnityEngine;
 public class Moving : MonoBehaviour
 {
     public Navigation_Controller nav;
+    public MonoBehaviour Stu;
     public StateMachine state;
     public Idle Idle;
     void OnEnable()
     {
-        Debug.Log("Current State: Idle");
+        Debug.Log("Current State: Moving");
         SendMessage("updateDestination");
     }
 
@@ -21,5 +22,11 @@ public class Moving : MonoBehaviour
             nav.stopMoving();
             state.ActivateState(Idle);
         }
+    }
+
+    void Stun()
+    {
+        nav.stopMoving();
+        transform.SendMessage("ActivateState", Stu);
     }
 }

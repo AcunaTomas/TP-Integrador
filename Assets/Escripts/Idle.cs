@@ -5,6 +5,7 @@ using UnityEngine;
 public class Idle : MonoBehaviour
 {
     public MonoBehaviour Move;
+    public MonoBehaviour Stu;
     public Navigation_Controller nav;
     void OnEnable()
     {
@@ -18,5 +19,10 @@ public class Idle : MonoBehaviour
            
             transform.SendMessage("ActivateState", Move);
         }
+    }
+
+    void Stun()
+    {
+        transform.SendMessage("ActivateState", Stu);
     }
 }

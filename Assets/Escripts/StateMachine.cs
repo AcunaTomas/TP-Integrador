@@ -7,6 +7,7 @@ public class StateMachine : MonoBehaviour
     private MonoBehaviour CurrentState;
     public MonoBehaviour Idle;
     public MonoBehaviour Moving;
+    public MonoBehaviour stun;
     void Start()
     {
         CurrentState = Idle;
